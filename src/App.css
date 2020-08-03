@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+/* Header Section */
+.app__header {
+  background-color: #262626;
+  object-fit: contain;
+  display: flex;
+  z-index: 199;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid lightgray;
+}
+.add_post {
+  color: #fff;
+}
+.add_post:hover {
+  color: #0000e6;
+  cursor: pointer;
+  transition: 2s;
+}
+.icons:hover {
+  color: #0000e6;
+  cursor: pointer;
+  transition: 2s;
+}
+.right,
+.logo {
+  margin: 0 0.5rem;
+}
+.app__header h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Grand Hotel", cursive;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+.icons {
+  text-align: center;
+  color: #fafafa;
+  margin-left: 10px;
+}
+.icons:nth-child(2) {
+  color: red;
+}
+
+/* Post Section */
+.post__container {
+  margin-top: 3rem;
+  max-width: 500px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  margin-bottom: 1rem;
+}
+.post__image {
+  width: 100%;
+  object-fit: contain;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.post__text {
+  font-weight: normal;
+  padding: 10px;
+}
+.post__header {
+  display: flex;
+  align-items: center;
+  background-color: #b3b3b3;
+  padding: 10px 10px;
+}
+.post__avatar {
+  margin-right: 10px;
+}
+
+.post__header > h3,
+p {
+  opacity: 0.6;
+}
+.post__header p {
+  color: #0000ff;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: -1px;
+}
+.post__icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* login screen */
+h1 {
+  font-family: "Grand Hotel", cursive;
+  margin-bottom: 1rem;
+}
+.login_container {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_container input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px auto 1.5rem auto;
+  border: none;
+  border: 2px solid lightgray;
+}
+.login_container input:hover {
+  border: 2px solid #ffff33;
+}
+
+.login_container button {
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid lightgray;
+  background: #ffff33;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 30px;
+}
+
+.login_container button:hover {
+  background: #ffff99;
+  cursor: pointer;
+}
+
+.login_container h6 {
+  color: #ff0000;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.app_loginContainer {
+  padding: 5px;
+}
+.app_loginContainer button {
+  padding: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+/* image uploade */
+.imageupload {
+  padding: 10px;
+  justify-content: center;
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.imageupload progress {
+  width: 100%;
+  color: gray;
+}
+.imageupload input[type="file"] {
+  border: none;
+  border: 1px solid gray;
+  margin-top: 10px;
+  width: 80%;
+}
+.imageupload input {
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.imageupload .caption {
+  border: none;
+  border: 2px solid lightgray;
+  width: 80%;
+}
+.imageupload button {
+  background: green;
+  width: 60%;
+  margin: 0 auto;
+  padding: 6px;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.app_posts {
+  padding: 20px;
+}
+
+.form_comment {
+  display: flex;
+  width: 100%;
+}
+.comment_input {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  border-top: 1px solid #f0f0f0;
+}
+
+.form_comment button {
+  flex: 0;
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  padding: 10px;
+  background: #1ff1f1;
+  font-weight: 600;
+}
+.User_comment {
+  padding: 7px;
+}
+
+.all_comments {
+  margin-left: 5px;
+}
+
+.User_comment > b {
+  font-weight: 700;
+}
+.corner button {
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.corner button:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+@media (min-width: 1040px) {
+  .post__container {
+    margin-left: 27rem;
+  }
+}
