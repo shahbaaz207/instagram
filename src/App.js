@@ -50,7 +50,7 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Header />
-        {user?.displayName ? (
+       
           <Route exact path="/">
             <div className="app_posts">
               {posts.map(({ post, id }) => (
@@ -65,11 +65,7 @@ const App = () => {
               ))}
             </div>
           </Route>
-        ) : (
-          <div style={{ margin: "5rem", textAlign: "center" }}>
-            <h2>First you must to Logged In Here!!!</h2>
-          </div>
-        )}
+        
       </BrowserRouter>
     </div>
   );

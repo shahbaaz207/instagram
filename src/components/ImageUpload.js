@@ -1,5 +1,3 @@
-// https://9e2d2807b5cc.ngrok.io
-
 import React, { useState } from "react";
 import { storage, db } from "../firebase";
 import firebase from "firebase";
@@ -54,7 +52,6 @@ function ImageUpload({ username }) {
   return (
     <div className="imageupload">
       <progress value={progress} max="100" />
-
       <input type="file" onChange={handleChange} />
       <input
         type="text"
@@ -62,7 +59,6 @@ function ImageUpload({ username }) {
         placeholder="Enter a caption.."
         className="caption"
       />
-
       <button onClick={handleUpload}>Upload</button>
     </div>
   );

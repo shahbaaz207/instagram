@@ -78,8 +78,10 @@ const Post = ({ username, caption, imageUrl, postId, user }) => {
           </p>
         ))}
       </div>
-
+        
       <form className="form_comment">
+      {user?.displayName?
+      <>
         <input
           type="text"
           valu={comment}
@@ -93,10 +95,11 @@ const Post = ({ username, caption, imageUrl, postId, user }) => {
           type="submit"
           disabled={!comment}
           onClick={postComment}
-        >
-          Post
-        </button>
+        >Post</button> 
+        </>:null
+      }
       </form>
+        
     </div>
   );
 };

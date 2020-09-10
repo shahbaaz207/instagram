@@ -90,13 +90,13 @@ function Header() {
         <h2>Instagram</h2>
       </div>
       <div className="add_post">
-        {user?.displayName ? (
+      
           <AddCircleIcon
             style={{ fontSize: 35 }}
             className="add_post"
             onClick={() => setOpenPost(true)}
           />
-        ) : null}
+       
       </div>
       <div className="right">
         {user ? (
